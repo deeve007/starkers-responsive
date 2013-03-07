@@ -1,0 +1,113 @@
+/*
+Theme Name: 	Starkers Responsive
+Theme URI: 		http://zavadesign.com
+Description: 	Starkers Wordpress theme goes responsive!
+Version: 		1.0
+Author: 		David Rooney, Elliot Jay Stocks & Keir Whitaker
+Author URI: 	http://zavadesign.com
+Tags: 			starkers, naked, clean, responsive
+*/
+
+/*
+===========================
+CONTENTS:
+
+01 Sensible defaults
+02 Typography
+03 Base layout
+04 Media queries
+===========================
+*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+01 Sensible defaults ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+@import "css/reset.css";
+
+div,
+article,
+section,
+header,
+footer,
+nav,
+li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
+.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
+body 				{ background:#fff; /* Don't forget to style your body to avoid user overrides */ }
+::-moz-selection 	{ background:#ff0; color:#333; }
+::selection 		{ background:#ff0; color:#333; }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+02 Typography -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/*
+
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+
+body,
+input,
+textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+03 Base layout -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+article.main-content, section.main-content {
+	float: left;
+	width: 64.5833%;
+}
+aside.widget-area {
+	float: right;
+	width: 31.25%;
+}
+footer#colophon {
+	clear: both;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+04 Media queries ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+/* -- Tablet devices (Layout, modifications, etc) -- */
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+	#wrapper {
+		width: 700px;
+	}
+}
+/* End tablet media query */
+
+/* -- Mobile devices (Layout, modifications, etc) -- */
+@media only screen and (max-width: 719px) {
+	#wrapper {
+		width: 100%;
+	}
+	article.main-content, section.main-content {
+		float: none;
+		width: 100%;
+	}
+	aside.widget-area {
+		float: none;
+		width: 100%;
+	}
+}
+/* End mobile media query */
+
+/* --------- TO DO: Change to mobile first responsive ------------------------------- */
