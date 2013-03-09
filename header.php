@@ -15,6 +15,11 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico"/>
 	
+	<!-- HTML5shiv for ie8 and below html5 support -->
+	<!--[if lt IE 9]>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/html5shiv.js"></script>
+	<![endif]-->
+	
 	<!-- Stylesheet for flexnav responsive menu -->
 	<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/flexnav.css" rel="stylesheet" type="text/css" />
 	
