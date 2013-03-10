@@ -101,6 +101,7 @@ footer#colophon {
 	}
 	article.main-content, section.main-content {
 		float: none;
+		clear: both;
 		width: 100%;
 	}
 	aside.widget-area {

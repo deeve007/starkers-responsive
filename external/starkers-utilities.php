@@ -30,21 +30,6 @@
     	}
 
     	/**
-    	 * Simple wrapper for native get_template_part()
-    	 * Allows you to pass in an array of parts and output them in your theme
-    	 * e.g. <?php get_template_parts(array('part-1', 'part-2')); ?>
-    	 *
-    	 * @param 	array 
-    	 * @return 	void
-    	 * @author 	Keir Whitaker
-    	 **/
-    	public static function get_template_parts( $parts = array() ) {
-    		foreach( $parts as $part ) {
-    			get_template_part( $part );
-    		};
-    	}
-
-    	/**
     	 * Pass in a path and get back the page ID
     	 * e.g. Starkers_Utilities::get_page_id_from_path('about/terms-and-conditions');
     	 *
