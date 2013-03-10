@@ -5,11 +5,17 @@
 /* -- start desktop menu styles - needs to be desktop first with 
 no media query otherwise IE8 won't recognise styles -- */
 
-/* -----
-Top level items are set with % width, so will scale with page width.
-Unfortunately doesn't work with sub-menu, so you may need to change 
-em widths manually to fit your design.
------ */
+/* ----- Set links widths - other dimensions are below ----- */
+nav[role="navigation"] li {
+	width: auto; /* -- sets width for top level links -- */
+}
+nav[role="navigation"] ul ul a {
+	width: 8em; /* -- sets width for sub-menu links -- */
+}
+nav[role="navigation"] ul ul ul {
+	left: 9.5em; /* -- positions third level, adjust this depending on the width set for the sub-menus -- */
+}
+/* ----- end links widths ----- */
 
 nav[role="navigation"] {
 	background: #eee;
@@ -25,7 +31,6 @@ nav[role="navigation"] ul {
 nav[role="navigation"] li {
 	float: left;
 	position: relative;
-	width: 25%;
 }
 nav[role="navigation"] a {
 	display: block;
@@ -42,14 +47,12 @@ nav[role="navigation"] ul ul {
 	z-index: 99999;
 }
 nav[role="navigation"] ul ul ul {
-	left: 15em;
 	top: 0;
 }
 nav[role="navigation"] ul ul a {
 	background: #dedede;
 	line-height: 1em;
 	padding: .5em .5em .5em 1em;
-	width: 13.5em;
 	height: auto;
 }
 nav[role="navigation"] li:hover > a,

@@ -31,6 +31,10 @@
 	
 	The original Starkers theme on Github:
 	https://github.com/viewportindustries/starkers
+	
+	The menu code I chose was the excellent 
+	responsive Flexnav by Jason Weaver: 
+	https://github.com/indyplanets/flexnav
 
 	- - - - - - - - - - - - - - - - - - - - - - -
 
