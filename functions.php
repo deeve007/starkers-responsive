@@ -68,7 +68,7 @@
 		wp_enqueue_style( 'screen' );
 		
 		// add css file for menu
-		wp_register_style( 'navcss', get_stylesheet_directory_uri().'/css/nav.css', '', '', 'screen' );
+		wp_register_style( 'navcss', get_template_directory_uri().'/css/nav.css', '', '', 'screen' );
 		wp_enqueue_style( 'navcss' );
 		
 		// add jquery to theme
