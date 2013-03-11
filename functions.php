@@ -64,12 +64,19 @@
 		wp_register_script( 'site', get_template_directory_uri().'/js/site.js', array( 'jquery' ) );
 		wp_enqueue_script( 'site' );
 
-		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
+		wp_register_style( 'screen', get_template_directory_uri().'/style.css', '', '', 'screen' );
 		wp_enqueue_style( 'screen' );
 		
 		// add css file for menu
 		wp_register_style( 'navcss', get_template_directory_uri().'/css/nav.css', '', '', 'screen' );
 		wp_enqueue_style( 'navcss' );
+		
+		// add support for child themes without needing to manually import parent theme style.css
+		// add after parent theme css and nav css so it can override settings if required
+		if ( get_stylesheet_directory_uri() != get_template_directory_uri() ) {
+			wp_register_style( 'childcss', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
+			wp_enqueue_style( 'childcss' );
+		}
 		
 		// add jquery to theme
 		wp_deregister_script('jquery');
