@@ -8,7 +8,7 @@
 <?php if ( have_posts() ): ?>
 
 	<section class="main-content">
-		<h1>Category Archive: <?php echo single_cat_title( '', false ); ?></h1>
+		<h1 class="entry-title">Category Archive: <?php echo single_cat_title( '', false ); ?></h1>
 	
 		<?php while ( have_posts() ) : the_post(); ?>
 		<article>

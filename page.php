@@ -13,7 +13,7 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 	<article class="main-content">
-		<h1><?php the_title(); ?></h1>
+		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<?php the_content(); ?>
 		<?php // comments_template( '', true ); // pages never have comments, but uncomment if you want ?>
 	</article>

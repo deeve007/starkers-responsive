@@ -8,7 +8,7 @@
 <?php if ( have_posts() ): ?>
 
 	<section class="main-content">
-		<h1>Search Results for '<?php echo get_search_query(); ?>'</h1>	
+		<h1 class="entry-title">Search Results for '<?php echo get_search_query(); ?>'</h1>	
 	
 		<?php while ( have_posts() ) : the_post(); ?>
 		<article>

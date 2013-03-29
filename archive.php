@@ -14,13 +14,13 @@
 
 	<section class="main-content">
 		<?php if ( is_day() ) : ?>
-			<h1>Archive: <?php echo  get_the_date( 'D M Y' ); ?></h1>							
+			<h1 class="entry-title">Archive: <?php echo  get_the_date( 'D M Y' ); ?></h1>							
 		<?php elseif ( is_month() ) : ?>
-			<h1>Archive: <?php echo  get_the_date( 'M Y' ); ?></h1>	
+			<h1 class="entry-title">Archive: <?php echo  get_the_date( 'M Y' ); ?></h1>	
 		<?php elseif ( is_year() ) : ?>
-			<h1>Archive: <?php echo  get_the_date( 'Y' ); ?></h1>								
+			<h1 class="entry-title">Archive: <?php echo  get_the_date( 'Y' ); ?></h1>								
 		<?php else : ?>
-			<h1>Archive</h1>	
+			<h1 class="entry-title">Archive</h1>	
 		<?php endif; ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>

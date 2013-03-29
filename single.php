@@ -8,7 +8,7 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 	<article class="main-content">
-		<h1><?php the_title(); ?></h1>
+		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<time datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?>
 		<?php the_content(); ?>			
 

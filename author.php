@@ -8,7 +8,7 @@
 <?php if ( have_posts() ): the_post(); ?>
 
 	<section class="main-content">
-		<h1>Author Archives: <?php echo get_the_author() ; ?></h1>
+		<h1 class="entry-title">Author Archives: <?php echo get_the_author() ; ?></h1>
 
 		<?php if ( get_the_author_meta( 'description' ) ) : ?>
 			<?php echo get_avatar( get_the_author_meta( 'user_email' ) ); ?>
