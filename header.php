@@ -20,7 +20,7 @@
 	
 	<header id="masthead" role="banner">
 		<h1><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-		<h2><?php bloginfo( 'description' ); ?><h2>
+		<h2><?php bloginfo( 'description' ); ?></h2>
 		
 		<button id="togglebutt">Show/hide menu</button>
 		<nav role="navigation">
